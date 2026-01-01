@@ -26,9 +26,9 @@ def get(item_id:int):
     return items[item_id]
 
 #delete item
-@taskf3.get("/items/{item_id}",status_code=status.HTTP_204_NO_CONTENT)
+@taskf3.delete("/items/{item_id}",status_code=status.HTTP_204_NO_CONTENT)
 def delete(item_id:int):
     if item_id<0 or item_id>=len(items):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,detail="item is not found")
     items.pop(item_id)
-    return
+    
