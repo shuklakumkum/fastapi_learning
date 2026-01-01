@@ -15,3 +15,55 @@ Output
     "description": "no description"
   }
 }
+
+Input
+
+ {
+  "name": "AB", 
+  "price": 100
+ }
+
+Output
+{
+  "detail": [
+    {
+      "type": "string_too_short",
+      "loc": [
+        "body",
+        "name"
+      ],
+      "msg": "String should have at least 3 characters",
+      "input": "AB",
+      "ctx": {
+        "min_length": 3
+      }
+    }
+  ]
+}
+
+Input
+
+{
+  "name": "Laptop",
+  "price": -100
+}
+
+
+Output
+
+{
+  "detail": [
+    {
+      "type": "greater_than",
+      "loc": [
+        "body",
+        "price"
+      ],
+      "msg": "Input should be greater than 0",
+      "input": -100,
+      "ctx": {
+        "gt": 0
+      }
+    }
+  ]
+}
