@@ -9,7 +9,7 @@ taskf2=FastAPI()
 class Product(BaseModel):
     name:str=Field(min_length=3,max_length=50)
     price:float=Field(gt=0)
-    description:str = Field(default="no description")
+    description:str=Field(default="no description")
 
 #create list
 products=[]
