@@ -1,0 +1,25 @@
+Input:
+
+{
+  "name": "Kumkum",
+  "email": "kumkum123@gmail.com"
+}
+
+Output:
+
+{
+  "success": "true",
+  "message": "person Kumkum add successfully"
+}
+
+Duplicate Email:
+
+{
+  "name": "Kumkum",
+  "email": "kumkum123@gmail.com"
+}
+
+Output:
+{
+  "detail": "email is already exist"
+}

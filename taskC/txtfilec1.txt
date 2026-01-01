@@ -1,0 +1,35 @@
+Input
+
+{
+  "title": "Learn FastAPI"
+}
+
+
+output
+
+{
+  "id": 1,
+  "title": "Learn FastAPI",
+  "completed": false
+}
+
+Input
+
+{
+  "title": "Create API"
+}
+
+Output
+
+{
+  "id": 2,
+  "title": "Create API",
+  "completed": false
+}
+
+Delete
+
+{
+  "message": "All task are deleted",
+  "next_id": 1
+}

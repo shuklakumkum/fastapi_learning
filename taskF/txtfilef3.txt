@@ -1,0 +1,32 @@
+Input post
+
+{
+  "name": "Item1"
+}
+
+Output
+
+{
+  "name": "Item1"
+}
+
+Get Input
+
+item_id=0
+
+Get Output
+
+{
+  "name": "Item1"
+}
+
+Delete Input
+
+item_id=0
+
+
+Delete Output
+
+{
+  "detail": "item is not found"
+}

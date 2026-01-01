@@ -1,0 +1,17 @@
+Input
+
+{
+  "name": "Laptop",
+  "price": 50000
+}
+ 
+Output
+
+{
+  "message": "product add successfully",
+  "product": {
+    "name": "Laptop",
+    "price": 50000,
+    "description": "no description"
+  }
+}
