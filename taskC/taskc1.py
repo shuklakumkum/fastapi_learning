@@ -12,10 +12,10 @@ class Task(BaseModel):
 #To store task
 tasks=[]
 
-#global id counter
+#Global ID counter
 next_id=1
 
-#It create task
+#Create a new task
 @taskc1.post("/tasks")
 def create(task:Task):
     global next_id
@@ -25,13 +25,13 @@ def create(task:Task):
         "id":next_id,
         "title":task.title,
         "completed":task.completed       
-   }
+    }
     
     #add task
     tasks.append(new_task)
 
     #increase id
-    next_id=next_id+1
+    next_id+=1
 
     #return task
     return new_task
@@ -43,6 +43,6 @@ def reset_tasks():
     tasks.clear()
     next_id=1
     return{
-        "message":"All task is deleted",
+        "message":"All tasks are deleted",
         "next_id":next_id
     }
