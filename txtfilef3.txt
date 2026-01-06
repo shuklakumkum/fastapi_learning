@@ -1,0 +1,42 @@
+Input post
+
+{
+  "name": "Item1"
+}
+
+Output
+
+{
+  "name": "Item1"
+}
+
+Get Input
+
+item_id=0
+
+Get Output
+
+{
+  "name": "Item1"
+}
+
+Delete Input
+
+item_id=0
+
+Delete output
+
+ content-type: application/json 
+ date: Tue,06 Jan 2026 11:53:11 GMT 
+ server: uvicorn 
+
+
+Delete Input
+
+item_id=0
+
+Delete Output
+
+{
+  "detail": "item is not found"
+}
